@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b3628132-1139-4fff-aa8f-1dff6588bc78",
+		"_postman_id": "4af29d7f-1b06-4528-b2c2-b27ab5a9fecd",
 		"name": "cats",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -36,7 +36,37 @@
 			"response": []
 		},
 		{
-			"name": "test/cats",
+			"name": "cat/:id/edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"balz\",\r\n    \"is_strip\": true,\r\n    \"color\": \"orange\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/c8e7f3c6-ba64-4881-9244-6e961c70c701",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"cat",
+						"c8e7f3c6-ba64-4881-9244-6e961c70c701"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cats",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -61,7 +91,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888/api/cat/e7bef0c4-8749-4069-86ba-85422b16663d",
+					"raw": "http://localhost:8888/api/cat/c8e7f3c6-ba64-4881-9244-6e961c70c701",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -70,7 +100,7 @@
 					"path": [
 						"api",
 						"cat",
-						"e7bef0c4-8749-4069-86ba-85422b16663d"
+						"c8e7f3c6-ba64-4881-9244-6e961c70c701"
 					]
 				}
 			},
@@ -91,7 +121,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8888/api/cat/e7bef0c4-8749-4069-86ba-85422b16663d",
+					"raw": "http://localhost:8888/api/cat/d3b30d51-5d59-40c5-9e4e-b7dd74794bf6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -100,7 +130,7 @@
 					"path": [
 						"api",
 						"cat",
-						"e7bef0c4-8749-4069-86ba-85422b16663d"
+						"d3b30d51-5d59-40c5-9e4e-b7dd74794bf6"
 					]
 				}
 			},

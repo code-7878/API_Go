@@ -7,7 +7,7 @@ func PostgresConnect() *pg.DB {
 		User:     "postgres",
 		Password: "ptpit",
 		Addr:     "localhost:5432",
-		Database: "Cats_1",
+		Database: "cats_2",
 	}
 	return pg.Connect(options)
 }
